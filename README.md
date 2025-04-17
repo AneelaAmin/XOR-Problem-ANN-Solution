@@ -59,8 +59,8 @@ for i in range(len(X)):
 
 ## 🔧 How to Run
 1. Clone the repo:
-git clone https://github.com/yourusername/xor-problem-ann-solution.git
-cd xor-problem-ann-solution
+git clone https://github.com/AneelaAmin/XOR-Problem-ANN-Solution.git
+cd XOR-Problem-ANN-Solution
 
 2. python XOR_ANN.py
 
