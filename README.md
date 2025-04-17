@@ -44,32 +44,31 @@ model.add(Dense(1,activation='sigmoid'))
 model.compile(optimizer='adam',loss='binary_crossentropy',metrics=['accuracy'])
 model.fit(X,y,epochs=100,verbose=0)
 
-# Evaluating the Accuracy
+--> Evaluating the Accuracy
 _,accuracy=model.evaluate(X,y)
 print(f"Accuracy : {accuracy*100:.2f}%")
 
 predictions=model.predict(X)
 predictions=np.round(predictions).astype(int)
 
-# Printing the Predicted Values and the Accurate Outputs as well
+--> Printing the Predicted Values and the Accurate Outputs as well
 print("Prediction: ")
 for i in range(len(X)):
     print(f"Input {X[i]} => Predicted Output: {predictions[i]} , Actual Output: {y[i]}")
 
-## 🔧 How to Run
-
-1. Clone the repo:
+**## 🔧 How to Run**
+**1. Clone the repo:**
 git clone https://github.com/yourusername/xor-problem-ann-solution.git
 cd xor-problem-ann-solution
 
 2. python XOR_ANN.py
 
-## 📈 Accuracy
+**## 📈 Accuracy**
 Achieves ~100% training accuracy using binary cross-entropy loss.
 Converges in ~10,000 epochs with near-zero loss.
 Matches XOR truth table accurately:
 
-## 📈 Output
+**## 📈 Output**
 Input: [0, 1] → Predicted: 0.98 Input: [1, 1] → Predicted: 0.01
 <img width="202" alt="image" src="https://github.com/user-attachments/assets/306cc79d-9a33-4326-b33c-d925f5a9ce74" />
 
