@@ -55,3 +55,27 @@ predictions=np.round(predictions).astype(int)
 print("Prediction: ")
 for i in range(len(X)):
     print(f"Input {X[i]} => Predicted Output: {predictions[i]} , Actual Output: {y[i]}")
+
+## 🔧 How to Run
+
+1. Clone the repo:
+git clone https://github.com/yourusername/xor-problem-ann-solution.git
+cd xor-problem-ann-solution
+
+2. python XOR_ANN.py
+
+## 📈 Accuracy
+Achieves near 100% accuracy using binary cross-entropy loss.
+Achieves ~100% training accuracy after 10,000 epochs.  
+Loss converges to near zero, and predictions match XOR truth table.
+
+# Output
+Input: [0, 1] → Predicted: 0.98 Input: [1, 1] → Predicted: 0.01
+
+
+## 📚 References
+- [XOR Problem Wiki](https://en.wikipedia.org/wiki/Exclusive_or)
+- Andrew Ng’s Deep Learning Specialization – Week 3 (Hidden Layers & Activation Functions)
+- McCulloch-Pitts Neuron Model
+- Perceptron and MLP Architectures (MIT OCW)
+
