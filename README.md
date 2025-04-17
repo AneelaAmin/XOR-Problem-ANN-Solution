@@ -24,33 +24,9 @@ A single-layer perceptron fails at XOR due to its linear limitation. But a Multi
 - **Input Layer:** 2 neurons (A and B)
 - **Hidden Layer:** 2 neurons with ReLU activation
 - **Output Layer:** 1 neuron with sigmoid activation
-
-**## 🔧 How to Run**
-**1. Clone the repo:**
-git clone https://github.com/yourusername/xor-problem-ann-solution.git
-cd xor-problem-ann-solution
-
-2. python XOR_ANN.py
-
-**## 📈 Accuracy**
-Achieves ~100% training accuracy using binary cross-entropy loss.
-Converges in ~10,000 epochs with near-zero loss.
-Matches XOR truth table accurately:
-
-**## 📈 Output**
-Input: [0, 1] → Predicted: 0.98 Input: [1, 1] → Predicted: 0.01
-<img width="202" alt="image" src="https://github.com/user-attachments/assets/306cc79d-9a33-4326-b33c-d925f5a9ce74" />
-
-
-## 📚 References
-XOR Problem – Wikipedia
-Andrew Ng’s Deep Learning Specialization – Week 3: Hidden Layers & Activation Functions
-McCulloch-Pitts Neuron Model (1943)
-MIT OpenCourseWare – Perceptron and MLP Architectures
-
+ 
 ## 🧾 Code Overview
-
-```python
+python
 import numpy as np
 import pandas as pd
 import tensorflow as tf
@@ -79,25 +55,30 @@ print("Prediction: ")
 for i in range(len(X)):
     print(f"Input {X[i]} => Predicted Output: {predictions[i]} , Actual Output: {y[i]}")
 
-**## 🔧 How to Run**
-**1. Clone the repo:**
+
+
+## 🔧 How to Run
+1. Clone the repo:
 git clone https://github.com/yourusername/xor-problem-ann-solution.git
 cd xor-problem-ann-solution
 
 2. python XOR_ANN.py
 
-**## 📈 Accuracy**
+## 📈 Accuracy
 Achieves ~100% training accuracy using binary cross-entropy loss.
 Converges in ~10,000 epochs with near-zero loss.
 Matches XOR truth table accurately:
+Input: [0, 0] → Predicted: 0.01  
+Input: [0, 1] → Predicted: 0.98  
+Input: [1, 0] → Predicted: 0.98  
+Input: [1, 1] → Predicted: 0.01  
 
-**## 📈 Output**
+## 📈 Output
 Input: [0, 1] → Predicted: 0.98 Input: [1, 1] → Predicted: 0.01
-<img width="202" alt="image" src="https://github.com/user-attachments/assets/306cc79d-9a33-4326-b33c-d925f5a9ce74" />
-
 
 ## 📚 References
 XOR Problem – Wikipedia
 Andrew Ng’s Deep Learning Specialization – Week 3: Hidden Layers & Activation Functions
 McCulloch-Pitts Neuron Model (1943)
 MIT OpenCourseWare – Perceptron and MLP Architectures
+
